@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Table</title>
+</head>
+<body>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th class="table-primary">Fotografía</th>
+                <th class="table-primary">Nombre</th>
+                <th class="table-primary">Ingredientes</th>
+                <th class="table-primary">País de origen</th>
+                <th class="table-primary">Receta del platillo</th>
+                <th class="table-primary">Opciones de donde comprar</th>
+                <th class="table-primary">Opciones</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            <tr>
+                <td>
+                    <figure class="figure">
+                        <img src="IMG/cheesecake.jpg" width="200px" class="figure-img img-fluid rounded" alt="Imagen del cheesecake">
+                        <figcaption class="figure-caption">Foto del Cheesecake</figcaption>
+                    </figure>
+                </td>
+                <td>Cheesecake</td>
+                    <td > <span  class =" badge text-bg-info " > <i  style =" color: aliceblue ; " onclick =" cheesecake() " > Ingredientes </i > </span > </td >
+                </td>
+                <td>
+                    <span>Grecia</span>
+                </td>
+                <td>
+                    <button class="btn btn-info">
+                        <i class="bi bi-list-task" style="font-size: 3rem; color: aliceblue;"onclick ="receta1() "> </i>
+                    </button> 
+                </td>
+                <td>
+                    <button class="btn btn-info">
+                        <i  class="bi bi-geo-alt" style="font-size: 2rem; color: aliceblue;"></i>
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="bi bi-cart-check-fill"style="font-size: 2rem; color: aliceblue;"></i>
+                    </button>
+                </td>
+                <td>
+                 <button class="btn btn-info">
+            <i class="bi bi-plus-square"style="font-size: 2rem; color: aliceblue;"></i>
+        </button> 
+        <button class="btn btn-danger">
+            <i class="bi bi-subtract" style="font-size: 2rem; color: aliceblue;"></i>
+        </button>
+              </td>
+            <tr>
+                <td>
+                    <figure class="figure">
+                        <img src="IMG/Flan.jpg" width="200px" class="figure-img img-fluid rounded" alt="Imagen de Flan">
+                        <figcaption class="figure-caption">Foto del Flan de huevo</figcaption>
+                    </figure>
+                </td>
+                <td>Flan de huevo</td>
+                <td > <span  class =" badge text-bg-info " > <i  style =" color: aliceblue ; " onclick =" flan() " > Ingredientes </i > </span > </td >
+                    </td>
+                <td>Italia</td>
+                <td>
+                    <button class="btn btn-info">
+                        <i class="bi bi-list-task" style="font-size: 3rem; color: aliceblue;"onclick ="receta2() "> </i>
+                    </button> 
+                </td>
+                <td>
+                    <button class="btn btn-info">
+                        <i class="bi bi-geo-alt" style="font-size: 2rem; color: aliceblue;"></i>
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="bi bi-cart-check-fill"style="font-size: 2rem; color: aliceblue;"></i>
+                    </button>
+                </td>
+                <td>
+                    <button class="btn btn-info">
+               <i class="bi bi-plus-square"style="font-size: 2rem; color: aliceblue;"></i>
+           </button> 
+           <button class="btn btn-danger">
+               <i class="bi bi-subtract" style="font-size: 2rem; color: aliceblue;"></i>
+           </button>
+                 </td>
+            </tr>
+            <tr>
+                <td>
+                    <figure class="figure">
+                        <img src="IMG/Pie.jpg" width="200px" class="figure-img img-fluid rounded" alt="Imagen del Pie de Limon">
+                        <figcaption class="figure-caption">Foto del Pay de limón</figcaption>
+                    </figure>
+                </td>
+                <td>Pay de limón</td>
+                    <td > <span  class =" badge text-bg-info " > <i  style =" color: aliceblue ; " onclick =" pay() " > Ingredientes </i > </span > </td >
+            </td>
+                <td>Inglaterra</td>
+                <td>
+                    <button class="btn btn-info">
+                        <i class="bi bi-list-task" style="font-size: 3rem; color: aliceblue; "onclick ="receta3() "> </i>
+                        
+                    </button> 
+                </td>
+                <td>
+                    <button class="btn btn-info">
+                        <i class="bi bi-geo-alt" style="font-size: 2rem; color: aliceblue;"></i>
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="bi bi-cart-check-fill"style="font-size: 2rem; color: aliceblue;"></i>
+                    </button>
+                </td>
+                <td>
+                    <button class="btn btn-info">
+               <i class="bi bi-plus-square"style="font-size: 2rem; color: aliceblue;"></i>
+           </button> 
+           <button class="btn btn-danger">
+               <i class="bi bi-subtract" style="font-size: 2rem; color: aliceblue;"></i>
+           </button>
+                 </td>
+            </tr>
+            <tr>
+                <td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>        
+    </table>
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+        function cheesecake() {
+            Swal.fire({
+                title: 'Ingredientes a utilizar',
+                text: 'Ingredientes a usar',                
+                html:
+                '1/2 taza de migajas de galletas graham<br/>'+
+                '3 cucharadas de azúcar granulada<br/>'+
+                '1/3 taza de mantequilla o margarina, derretida<br/>'+
+                '4 paquetes (8 oz cada uno) de queso crema PHILADELPHIA,ablandado<br/>'+
+                '1 taza de azúcar granulada<br/>'+
+                '1 cucharadita de vainilla<br/>'+
+                '4 huevos<br/>',
+                    focusConfirm: false,
+                    confirmButtonText:
+                        '<i class="fa fa-thumbs-up"></i> OKi!',
+                })
+        }
+</script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+        function flan() {
+            Swal.fire({
+                title: 'Ingredientes a utilizar',
+                text: 'Ingredientes a usar',                
+                html:
+                '500ml de leche entera.<br/>'+
+                '4 huevos enteros.<br/>'+
+                '2 yemas de huevo.<br/>'+
+                '250g de azucar blanca. <br/>'+
+                'Una cucharada de zumo de limón. <br/>',
+                    focusConfirm: false,
+                    confirmButtonText:
+                        '<i class="fa fa-thumbs-up"></i> OKi!',
+                })
+        }
+</script>
+</script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+        function pay() {
+            Swal.fire({
+                title: 'Ingredientes a utilizar',
+                text: 'Ingredientes a usar',                
+                html:
+                '1 lata de leche condensada (395g).<br/>'+
+                '1 lata de leche evaporada (360g)..<br/>'+
+                'Jugo de limón (200 ml) Aprox. 10 limones.<br/>'+
+                'Dos paquetes de galletas Marías. <br/>',
+                    focusConfirm: false,
+                    confirmButtonText:
+                        '<i class="fa fa-thumbs-up"></i> OKi!',
+                })
+        }
+</script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+        function receta1() {
+            Swal.fire({
+                title: 'Pasos',
+                text: 'Ingredientes a usar',                
+                html:
+                '1- Calienta el horno a 325ºF<br/>'+
+                '2- Mezcla las migajas, 3 cdas. de azúcar y la mantequilla; presiona esto firmemente contra el fondo de un molde con aro desmontable (springform pan) de 9 pulgs.<br/>'+
+                '3- Bate bien el queso crema, 1 taza de azúcar y la vainilla en un tazón grande con una batidora eléctrica. Agrega uno por uno los huevos; después de añadir cada uno, bate a velocidad baja sólo hasta mezclarlo. Vierte la mezcla en la base del pastel.<br/>'+
+                '4- Hornea el cheesecake 55 min. o hasta que el centro esté casi cuajado. Pasa un cuchillo o espátula de metal por el borde del molde para despegar el pastel; déjalo enfriar antes de quitarle el aro al molde. Refrigéralo durante 4 horas.<br/>',
+                
+                    focusConfirm: false,
+                    confirmButtonText:
+                        '<i class="fa fa-thumbs-up"></i> OKi!',
+                })
+        }
+</script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+        function receta2() {
+            Swal.fire({
+                title: 'Pasos',
+                text: 'Ingredientes a usar',                
+                html:
+                '1- En un bol ponemos los 4 huevos enteros, las dos yemas y 150g del azúcar. Lo batimos hasta que tenga una consistencia homogénea. Después añadimos la leche y mezclamos bien.<br/>'+
+                '2- En otro cazo, echamos los 100g restantes del azúcar blanco. Añadimos un poquito de agua, lo suficiente para que cubra el azúcar y añadiremos también el zumo de limón. Debemos calentar la mezcla a fuego lento sin dejar de remover y retirar antes de que el caramelo se dore demasiado, ya que el calor que retiene lo continuará cocinando.<br/>'+
+                '3- Cuando el caramelo esté listo lo echaremos en el fondo de unas flaneras, o recipientes que vayamos a usar para cocinar el flan y después añadiremos en ellas la mezcla que hemos preparado al principio.<br/>'+
+                '4- Hecho esto pondremos agua en una bandeja de horno y encima las flaneras, evitando que el agua rebose. Cuando el horno esté precalentado a unos 190ºC, meteremos la bandeja y taparemos los flanes con papel de aluminio.<br/>'+
+                '5- Pasados unos 50 minutos los flanes habrán cuajado y se podrán sacar del horno. Solo queda dejar que el flan de huevo al horno se enfríe, antes de desmoldar.<br/>',
+                    focusConfirm: false,
+                    confirmButtonText:
+                        '<i class="fa fa-thumbs-up"></i> OKi!',
+                })
+        }
+</script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+        function receta3() {
+            Swal.fire({
+                title: 'Pasos',
+                text: 'Ingredientes a usar',                
+                html:
+                '1- Lo primero que tienes que hacer es colar el jugo de limón para que quede completamente libre de semillas.<br/>'+
+                '2- Tendrás que licuar el limón con la leche condensada y evaporada, hasta obtener una pasta que será una de las bases con las que vas a crear el postre.<br/>'+
+                '3- En el refractario pondrás una capa de galletas enteras, seguida de una capa de la pasta, procurando no dejar huecos entre ambas y repitiendo el proceso hasta llenarlo.<br/>'+
+                '4- La última capa, que debe ser con la pasta, la puedes decorar con ralladura de limón o trozos de galleta enteros y un toque de canela.<br/>'+
+                '5- Finalmente tapas el refractario con papel aluminio y lo dejas enfriar durante 3 horas en el refrí para que esté listo para disfrutar.<br/>',
+                    focusConfirm: false,
+                    confirmButtonText:
+                        '<i class="fa fa-thumbs-up"></i> OKi!',
+                })
+        }
+</script>
+</html>
